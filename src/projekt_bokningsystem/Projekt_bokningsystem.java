@@ -363,9 +363,14 @@ public class Projekt_bokningsystem {
         }
     }
             
-    public static void main(String[] args) {      
+    public static void main(String[] args) {
+        /*
+        //Fyllda fält som kan användas till testning
         int[] perssonummer_bokning = {19980426, 19870611, 0, 19890318, 19880606, 19880402, 19850807, 19860423, 19971023, 19931023, 19910723, 19870623, 0, 19890223, 19900323, 19870323, 0, 19910623, 19840823, 0,19870423};
         String[] namn_bokning = {"Ronald Taylor", "Mark Brown", null, "David Hernandez", "Steven Smith", "Paul Lee", "Joseph Davis", "Richard Thompson", "Christopher Rodriguez", "Donald Jones", "Ronald Lee", "Mark Jackson", null, "Thomas White", "Robert Wilson", "Brian Lopez", null, "Kenneth Davis", "George Rodriguez",null , "Ronald Smith"};
+        */
+        int[] perssonummer_bokning = new int[21];
+        String[] namn_bokning = new String[21];
         String[] kön_bokning = new String[21];
         boolean fortsätt=true;
         System.out.println("Väkommen!\nDetta är ett bokningssystem till en buss med 21 platser. Nedan har du en lista över vad du kan göra.\n");
