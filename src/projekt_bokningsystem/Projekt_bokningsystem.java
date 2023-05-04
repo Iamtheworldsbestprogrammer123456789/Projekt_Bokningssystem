@@ -73,7 +73,7 @@ public class Projekt_bokningsystem {
         int antal = 0;
         //for loopen går igenom hela personnumers fältet och adderar antal med 1 om personen är vuxen
         for(int i = 0; i < p_fält.length; i++){
-            if(beräkna_ålder(p_fält[i]) >= 18 && p_fält[i] != 0) {
+            if(beräkna_ålder(p_fält[i]) >= 18 && beräkna_ålder(p_fält[i]) <= 69 && p_fält[i] != 0) {
                 antal++;
             } 
         }
@@ -385,15 +385,16 @@ public class Projekt_bokningsystem {
             
     public static void main(String[] args) {
         //Fyllda fält som kan användas till testning
+        
+        int[] personnummer_bokning = {19980426, 19870611, 20060701, 19890318, 19880606, 19880402, 19850807, 19860423, 19971023, 19931023, 19910723, 19870623, 20120323, 19890223, 19900323, 19870323, 19451204, 19910623, 19840823, 19991134,19870423};
+        String[] namn_bokning = {"Ronald Taylor", "Mark Brown", "Björn", "David Hernandez", "Steven Smith", "Paul Lee", "Joseph Davis", "Richard Thompson", "Christopher Rodriguez", "Donald Jones", "Ronald Lee", "Mark Jackson", "Björn", "Thomas White", "Robert Wilson", "Brian Lopez", "Björn", "Kenneth Davis", "George Rodriguez","Björn" , "Ronald Smith"};   
+        String[] kön_bokning = {"Man", "Man", "Man", "Man", "Man", "Man", "Man", "Man", "Man", "Man", "Man", "Man", "Man", "Man", "Man", "Man", "Man", "Man", "Man", "Man", "Man"};
         /*
-        int[] personnummer_bokning = {19980426, 19870611, 0, 19890318, 19880606, 19880402, 19850807, 19860423, 19971023, 19931023, 19910723, 19870623, 0, 19890223, 19900323, 19870323, 0, 19910623, 19840823, 0,19870423};
-        String[] namn_bokning = {"Ronald Taylor", "Mark Brown", null, "David Hernandez", "Steven Smith", "Paul Lee", "Joseph Davis", "Richard Thompson", "Christopher Rodriguez", "Donald Jones", "Ronald Lee", "Mark Jackson", null, "Thomas White", "Robert Wilson", "Brian Lopez", null, "Kenneth Davis", "George Rodriguez",null , "Ronald Smith"};   
-        String[] kön_bokning = {"Man", "Man", null, "Man", "Man", "Man", "Man", "Man", "Man", "Man", "Man", "Man", null, "Man", "Man", "Man", null, "Man", "Man", null, "Man"};
-        */
         //fälten för namn, personnummer och kön. Varje element är en plats och element platsen plus 1 är platsen i bussen.
         int[] personnummer_bokning = new int[21];
         String[] namn_bokning = new String[21];
         String[] kön_bokning = new String[21];
+        */
         //om fortsätt är false så avbryts while loopen som switch caset är i
         boolean fortsätt=true;
         System.out.println("Väkommen!\nDetta är ett bokningssystem till en buss med 21 platser. Nedan har du en lista över vad du kan göra.\n");
