@@ -31,7 +31,7 @@ public class Projekt_bokningsystem {
         }
         catch(Exception e) {
             //om det inte är en acceptabel input printas det och while loopen börjar om
-            System.out.print("Ange en siffra!\nval: ");
+            System.out.print("Ange en siffra!\n: ");
             scan.nextLine();
         }
         }
